@@ -1,0 +1,41 @@
+.piano-wrapper{
+    width: 100vw;
+    height: 50vh;
+    background: rgb(109, 109, 109);
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.key-span{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.white-key{
+    width: calc(100vw/38);
+    height: 99.5%;
+    background: rgb(233, 231, 231);
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+.white-key:active{
+    height: 99.8%;
+}
+
+
+
+.red-line{
+    height: 4px;
+    width: 100%;
+    background-color: rgb(153, 0, 0);
+    position: absolute;
+    top: -4px;
+}
